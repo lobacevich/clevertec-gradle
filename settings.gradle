@@ -2,3 +2,4 @@ rootProject.name = 'gradle'
 
 include 'util'
 include 'core'
+include 'api'

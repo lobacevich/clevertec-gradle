@@ -10,9 +10,3 @@ allprojects {
         mavenCentral()
     }
 }
-
-jar {
-    manifest {
-        attributes('name': project.name, 'version': version)
-    }
-}
