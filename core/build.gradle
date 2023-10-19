@@ -1,5 +1,6 @@
 plugins {
     id 'java'
+    id 'jacoco'
 }
 
 dependencies {
@@ -17,3 +18,5 @@ jar {
 test {
     useJUnitPlatform()
 }
+
+test.finalizedBy jacocoTestReport
