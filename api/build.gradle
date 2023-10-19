@@ -1,0 +1,14 @@
+plugins {
+    id 'java'
+}
+
+dependencies {
+    implementation project(':core')
+}
+
+jar {
+    manifest {
+        attributes('name': project.name, 'version': version, 'Main-Class': 'by.clevertec.lobacevich.Main')
+    }
+    from(configurations.runtimeClasspath.files.collect{zipTree(it)})
+}
